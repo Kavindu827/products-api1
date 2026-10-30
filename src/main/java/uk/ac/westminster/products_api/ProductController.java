@@ -27,8 +27,8 @@ public class ProductController {
         return productService.getProductById(id).orElse(null);
     }
 
-    @PostMapping("/products")
-    public Product addProduct(@RequestBody Product product) {
+    @PostMapping("/products/digital")
+    public Product addDigitalProduct(@RequestBody DigitalProduct product) {
         return productService.addProduct(product);
     }
 

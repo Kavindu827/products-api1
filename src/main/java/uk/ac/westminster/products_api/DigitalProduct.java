@@ -10,6 +10,7 @@ public class DigitalProduct extends Product {
 
     public DigitalProduct(Long id, String name, double price,
                           String downloadUrl, double fileSizeMB) {
+        super(id, name, price);
         this.downloadUrl = downloadUrl;
         this.fileSizeMB = fileSizeMB;
     }
@@ -18,12 +19,12 @@ public class DigitalProduct extends Product {
         return downloadUrl;
     }
 
-    public double getFileSizeMB() {
-        return fileSizeMB;
-    }
-
     public void setDownloadUrl(String downloadUrl) {
         this.downloadUrl = downloadUrl;
+    }
+
+    public double getFileSizeMB() {
+        return fileSizeMB;
     }
 
     public void setFileSizeMB(double fileSizeMB) {
